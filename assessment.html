@@ -24,12 +24,26 @@
       </nav>
     </header>
 
-    <h1>あなたのいいところは?</h1>
-    <p>診断したい名前を入れて下さい</p>
-    <input type="text" id="user-name" size="40" maxlength="20">
-    <button id="assessment">診断する</button>
-    <div id="result-area"></div>
-    <div id="tweet-area"></div>
+      <div class="container pt-5">
+      <h1>あなたのいいところは?</h1>
+      <p>診断したい名前を入れて下さい</p>
+      
+      <div class="row">
+        <div class="col-sm-9 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control " id="user-name" size="40" maxlength="20">
+            <button class="btn btn-primary" id="assessment">診断する</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-9">
+          <div id="result-area"></div>
+        </div>
+      </div>
+      <div id="tweet-area" class="mt-3"></div>
+    </div>
     <script src="assessment.js"></script>
   </body>
 </html>
